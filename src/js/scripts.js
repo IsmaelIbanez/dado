@@ -3,14 +3,14 @@ let anterior = 1;
 let apuesta = parseInt(document.querySelector('.apuesta').value);
 let historial = [];
 
-document.querySelector("button").addEventListener("click", tirar);
+document.querySelector(".roll").addEventListener("click", tirar);
 
 
 function tirar() {
 
     document.querySelector('.mensaje').textContent = " ";
 
-    if (dinero > 0 && dinero >= apuesta && typeof(apuesta) == true ) {
+    if (dinero > 0 && dinero >= apuesta && typeof(apuesta) == Number ) {
         console.log("suuu");
         seJuega();       
     } 
