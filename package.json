@@ -1,0 +1,26 @@
+{
+  "name": "dado",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel serve src/index.html",
+    "build": "rm -rf build && parcel build src/index.html -d build --public-url /dado/",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsmaelIbanez/dado.git"
+  },
+  "author": "Isma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IsmaelIbanez/dado/issues"
+  },
+  "homepage": "https://github.com/IsmaelIbanez/dado#readme",
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "parcel-bundler": "^1.12.4"
+  }
+}
