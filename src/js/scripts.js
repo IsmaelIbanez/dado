@@ -1,4 +1,4 @@
-let dinero = parseInt(document.querySelector('dinero').textContent);
+let dinero = parseInt(document.querySelector('.dinero').textContent);
 let anterior = 1;
 document.querySelector("button").addEventListener("click", tirar);
 
