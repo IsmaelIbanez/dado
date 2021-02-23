@@ -43,29 +43,5 @@ function seJuega() {
 
     anterior = random;
 
-    switch (random) {
-        case 1:
-            document.querySelector('.dado').src = 'img/dice1.gif';
-            break;
-
-        case 2:
-            document.querySelector('.dado').src = 'img/dice2.gif';
-            break;
-
-        case 3:
-            document.querySelector('.dado').src = 'img/dice3.gif';
-            break;
-
-        case 4:
-            document.querySelector('.dado').src = 'img/dice4.gif';
-            break;
-
-        case 5:
-            document.querySelector('.dado').src = 'img/dice5.gif';
-            break;
-
-        case 6:
-            document.querySelector('.dado').src = 'img/dice6.gif';
-            break;
-    }
+    document.querySelector('.dado').src = 'img/dice' + String(random) + '.gif'
 }
