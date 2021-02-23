@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel serve src/index.html",
-    "build": "rm -rf build && parcel build src/index.html -d build --public-url /dado/",
+    "build": "rm -rf build && parcel build src/index.html -d build --public-url /dado/ && cp -r src/img dist",
     "deploy": "gh-pages -d build"
   },
   "repository": {
